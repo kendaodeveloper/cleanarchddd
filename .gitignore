@@ -1,0 +1,8 @@
+# Java
+.idea
+.gradle
+bin
+build
+
+# Mac
+.DS_Store
