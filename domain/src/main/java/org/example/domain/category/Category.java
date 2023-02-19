@@ -43,6 +43,36 @@ public class Category extends AggregateRoot<CategoryID> {
     );
   }
 
+  public Category activate() {
+    if (!isActive()) {
+      this.active = true;
+      this.deletedAt = null;
+      this.updatedAt = Instant.now();
+    }
+    return this;
+  }
+
+  public Category deactivate() {
+    if (isActive()) {
+      this.active = false;
+      this.deletedAt = Instant.now();
+      this.updatedAt = Instant.now();
+    }
+    return this;
+  }
+
+  public Category update(String name, String description, boolean active) {
+    this.name = name;
+    this.description = description;
+    if (active) {
+      activate();
+    } else {
+      deactivate();
+    }
+    this.updatedAt = Instant.now();
+    return this;
+  }
+
   public CategoryID getId() {
     return id;
   }

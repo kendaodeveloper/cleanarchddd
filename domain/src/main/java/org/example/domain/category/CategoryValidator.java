@@ -8,6 +8,8 @@ public class CategoryValidator extends Validator {
   public static final String NAME_SHOULD_NOT_BE_NULL = "'name' should not be null";
   public static final String NAME_SHOULD_NOT_BE_EMPTY = "'name' should not be empty";
   public static final String NAME_CONTAINS_INVALID_SIZE = "'name' must be between 3 and 255 characters";
+  public static final int NAME_MAX_LENGTH = 255;
+  public static final int NAME_MIN_LENGTH = 3;
 
   private final Category category;
 
@@ -34,7 +36,7 @@ public class CategoryValidator extends Validator {
     }
 
     final var length = name.trim().length();
-    if (length > 255 || length < 3) {
+    if (length > NAME_MAX_LENGTH || length < NAME_MIN_LENGTH) {
       this.validationHandler().append(new ValidationError(NAME_CONTAINS_INVALID_SIZE));
     }
   }
