@@ -39,7 +39,7 @@ public class Category extends AggregateRoot<CategoryID> {
         active,
         Instant.now(),
         Instant.now(),
-        null
+        active ? null : Instant.now()
     );
   }
 
