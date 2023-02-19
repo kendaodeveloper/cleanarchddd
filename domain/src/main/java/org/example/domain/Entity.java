@@ -1,5 +1,7 @@
 package org.example.domain;
 
+import org.example.domain.validation.ValidationHandler;
+
 import java.util.Objects;
 
 // Hint: A Entity é definida pelo seu ID
@@ -14,6 +16,8 @@ public abstract class Entity<ID extends Identifier> {
   public ID getId() {
     return id;
   }
+
+  public abstract void validate(ValidationHandler handler);
 
   @Override
   public boolean equals(final Object o) {

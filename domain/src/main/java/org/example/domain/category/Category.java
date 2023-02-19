@@ -1,6 +1,7 @@
 package org.example.domain.category;
 
 import org.example.domain.AggregateRoot;
+import org.example.domain.validation.ValidationHandler;
 
 import java.time.Instant;
 
@@ -68,5 +69,10 @@ public class Category extends AggregateRoot<CategoryID> {
 
   public Instant getDeletedAt() {
     return deletedAt;
+  }
+
+  @Override
+  public void validate(final ValidationHandler handler) {
+    new CategoryValidator(this, handler).validate();
   }
 }

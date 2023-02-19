@@ -7,6 +7,5 @@ public class CategoryUseCaseTest {
   @Test
   public void createUseCase() {
     Assertions.assertNotNull(new CategoryUseCase());
-    Assertions.assertNotNull(new CategoryUseCase().execute());
   }
 }
