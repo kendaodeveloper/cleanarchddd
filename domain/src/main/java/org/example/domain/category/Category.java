@@ -1,10 +1,10 @@
 package org.example.domain.category;
 
-import java.time.Instant;
-import java.util.UUID;
+import org.example.domain.AggregateRoot;
 
-public class Category {
-  public String id;
+import java.time.Instant;
+
+public class Category extends AggregateRoot<CategoryID> {
   public String name;
   public String description;
   public boolean active;
@@ -13,9 +13,15 @@ public class Category {
   public Instant deletedAt;
 
   private Category(
-      String id, String name, String description, boolean active, Instant createdAt, Instant updatedAt, Instant deletedAt
+      CategoryID id,
+      String name,
+      String description,
+      boolean active,
+      Instant createdAt,
+      Instant updatedAt,
+      Instant deletedAt
   ) {
-    this.id = id;
+    super(id);
     this.name = name;
     this.description = description;
     this.active = active;
@@ -26,7 +32,7 @@ public class Category {
 
   public static Category newCategory(String name, String description, boolean active) {
     return new Category(
-        UUID.randomUUID().toString(),
+        CategoryID.unique(),
         name,
         description,
         active,
@@ -36,7 +42,7 @@ public class Category {
     );
   }
 
-  public String getId() {
+  public CategoryID getId() {
     return id;
   }
 
