@@ -10,7 +10,7 @@ repositories {
 }
 
 dependencies {
-    implementation(project(":application"))
+    implementation(project(":gateway"))
     implementation(project(":domain"))
 
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
