@@ -1,0 +1,11 @@
+version: '3.7'
+
+services:
+  mysql:
+    container_name: mysql_ddd
+    image: mysql:latest
+    environment:
+      - MYSQL_ROOT_PASSWORD=12345
+      - MYSQL_DATABASE=ddd
+    ports:
+      - 3306:3306
