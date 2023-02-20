@@ -4,8 +4,10 @@ import org.example.domain.category.Category;
 import org.example.domain.validation.handler.ThrowsValidationHandler;
 import org.example.interfaceadapter.category.CreateCategoryGateway;
 
+import javax.inject.Named;
 import java.util.Objects;
 
+@Named
 public class DefaultCreateCategoryUseCase extends CreateCategoryUseCase {
   private final CreateCategoryGateway createCategoryGateway;
 
