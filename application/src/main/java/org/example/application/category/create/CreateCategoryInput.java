@@ -1,4 +1,4 @@
-package org.example.application.category;
+package org.example.application.category.create;
 
 public record CreateCategoryInput(
     String name,

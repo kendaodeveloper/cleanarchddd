@@ -1,5 +1,7 @@
 package org.example.application.category;
 
+import org.example.application.category.create.CreateCategoryInput;
+import org.example.application.category.create.DefaultCreateCategoryUseCase;
 import org.example.domain.category.Category;
 import org.example.interfaceadapter.category.CreateCategoryGateway;
 import org.junit.jupiter.api.Assertions;

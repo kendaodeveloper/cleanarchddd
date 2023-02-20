@@ -1,4 +1,4 @@
-package org.example.application.category;
+package org.example.application.category.create;
 
 import org.example.application.UseCase;
 
