@@ -32,7 +32,7 @@ public class Category extends AggregateRoot<CategoryID> {
   }
 
   public static Category newCategory(String name, String description, boolean active) {
-    return new Category(
+    return with(
         CategoryID.unique(),
         name,
         description,
@@ -40,6 +40,18 @@ public class Category extends AggregateRoot<CategoryID> {
         Instant.now(),
         Instant.now(),
         active ? null : Instant.now()
+    );
+  }
+
+  public static Category with(CategoryID id, String name, String description, boolean active, Instant createdAt, Instant updatedAt, Instant deletedAt) {
+    return new Category(
+        id,
+        name,
+        description,
+        active,
+        createdAt,
+        updatedAt,
+        deletedAt
     );
   }
 
