@@ -1,4 +1,4 @@
-package org.example.gateway;
+package org.example.interfaceadapter;
 
 import org.junit.jupiter.api.Test;
 

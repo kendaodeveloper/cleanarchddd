@@ -2,7 +2,7 @@ package org.example.application.category;
 
 import org.example.domain.category.Category;
 import org.example.domain.validation.handler.ThrowsValidationHandler;
-import org.example.gateway.category.CreateCategoryGateway;
+import org.example.interfaceadapter.category.CreateCategoryGateway;
 
 import java.util.Objects;
 

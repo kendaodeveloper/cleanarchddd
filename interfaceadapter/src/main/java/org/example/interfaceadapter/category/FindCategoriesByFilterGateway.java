@@ -1,4 +1,4 @@
-package org.example.gateway.category;
+package org.example.interfaceadapter.category;
 
 import org.example.domain.category.Category;
 import org.example.domain.category.CategorySearchQuery;
