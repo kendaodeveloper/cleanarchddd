@@ -3,10 +3,10 @@ package org.example.infraestructure.category;
 import org.example.domain.category.Category;
 import org.example.domain.category.CategoryID;
 import org.example.domain.category.CategorySearchQuery;
+import org.example.domain.category.gateway.*;
 import org.example.domain.pagination.Pagination;
 import org.example.infraestructure.category.persistence.CategoryRepository;
 import org.example.infraestructure.category.persistence.CategoryTable;
-import org.example.interfaceadapter.category.*;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
@@ -43,6 +43,7 @@ public class CategoryGateway implements
   public Category updateById(CategoryID id, Category category) {
     return null;
   }
+
   @Override
   public void deleteById(CategoryID id) {
 

@@ -1,4 +1,4 @@
-package org.example.interfaceadapter.category;
+package org.example.domain.category.gateway;
 
 import org.example.domain.category.Category;
 import org.example.domain.category.CategoryID;

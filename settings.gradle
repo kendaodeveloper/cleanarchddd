@@ -2,5 +2,4 @@ rootProject.name = 'ddd'
 include 'domain'
 include 'application'
 include 'infraestructure'
-include 'interfaceadapter'
 

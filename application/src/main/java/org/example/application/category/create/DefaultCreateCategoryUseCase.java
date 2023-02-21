@@ -1,8 +1,8 @@
 package org.example.application.category.create;
 
 import org.example.domain.category.Category;
+import org.example.domain.category.gateway.CreateCategoryGateway;
 import org.example.domain.validation.handler.ThrowsValidationHandler;
-import org.example.interfaceadapter.category.CreateCategoryGateway;
 
 import javax.inject.Named;
 import java.util.Objects;
