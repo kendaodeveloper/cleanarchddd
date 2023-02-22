@@ -1,4 +1,4 @@
-rootProject.name = 'ddd'
+rootProject.name = 'cleanarchddd'
 include 'domain'
 include 'application'
 include 'infrastructure'

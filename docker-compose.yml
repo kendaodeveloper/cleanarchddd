@@ -2,10 +2,10 @@ version: '3.7'
 
 services:
   mysql:
-    container_name: mysql_ddd
+    container_name: mysql_cleanarchddd
     image: mysql:latest
     environment:
       - MYSQL_ROOT_PASSWORD=12345
-      - MYSQL_DATABASE=ddd
+      - MYSQL_DATABASE=cleanarchddd
     ports:
       - 3306:3306

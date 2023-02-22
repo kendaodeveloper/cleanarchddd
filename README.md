@@ -1,3 +1,3 @@
-# ddd
+# Clean Arch + DDD
 
-DDD + Clean Arch: Project example.
+Clean Arch + DDD: Project example.
