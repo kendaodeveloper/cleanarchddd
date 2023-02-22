@@ -1,4 +1,4 @@
-package org.example.infraestructure;
+package org.example.infrastructure;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

@@ -1,4 +1,4 @@
-package org.example.infraestructure.category.persistence;
+package org.example.infrastructure.category.persistence;
 
 import org.example.domain.category.Category;
 import org.example.domain.category.CategoryID;

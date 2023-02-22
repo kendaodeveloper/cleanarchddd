@@ -1,12 +1,12 @@
-package org.example.infraestructure.category;
+package org.example.infrastructure.category;
 
 import org.example.domain.category.Category;
 import org.example.domain.category.CategoryID;
 import org.example.domain.category.CategorySearchQuery;
 import org.example.domain.category.gateway.*;
 import org.example.domain.pagination.Pagination;
-import org.example.infraestructure.category.persistence.CategoryRepository;
-import org.example.infraestructure.category.persistence.CategoryTable;
+import org.example.infrastructure.category.persistence.CategoryRepository;
+import org.example.infrastructure.category.persistence.CategoryTable;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;

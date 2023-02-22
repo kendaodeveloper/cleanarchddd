@@ -16,7 +16,7 @@ plugins {
     id 'org.flywaydb.flyway' version '9.15.0'
 }
 
-group 'org.example.infraestructure'
+group 'org.example.infrastructure'
 version '1.0-SNAPSHOT'
 
 bootJar {
